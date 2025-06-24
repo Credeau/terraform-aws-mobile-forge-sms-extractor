@@ -80,7 +80,6 @@ No modules.
 | <a name="input_postgres_host"></a> [postgres\_host](#input\_postgres\_host) | postgres host | `string` | `null` | no |
 | <a name="input_postgres_password"></a> [postgres\_password](#input\_postgres\_password) | postgres user password | `string` | `null` | no |
 | <a name="input_postgres_port"></a> [postgres\_port](#input\_postgres\_port) | postgres port | `number` | `5432` | no |
-| <a name="input_postgres_sync_db"></a> [postgres\_sync\_db](#input\_postgres\_sync\_db) | postgres sync database | `string` | `null` | no |
 | <a name="input_postgres_user_name"></a> [postgres\_user\_name](#input\_postgres\_user\_name) | postgres user name | `string` | `null` | no |
 | <a name="input_private_subnet_ids"></a> [private\_subnet\_ids](#input\_private\_subnet\_ids) | list of private subnet ids to use | `list(string)` | n/a | yes |
 | <a name="input_region"></a> [region](#input\_region) | aws region to use | `string` | `"ap-south-1"` | no |
