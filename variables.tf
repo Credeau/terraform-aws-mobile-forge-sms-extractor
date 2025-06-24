@@ -54,7 +54,7 @@ variable "alert_email_recipients" {
 
 variable "instance_type" {
   type        = string
-  description = "Instances type to provision in ASG for producer"
+  description = "Instances type to provision in ASG for sms extractor"
   default     = "t2.micro"
 }
 
@@ -88,19 +88,19 @@ variable "key_name" {
 
 variable "asg_min_size" {
   type        = number
-  description = "minimum number of instances to keep in asg for producer"
+  description = "minimum number of instances to keep in asg for sms extractor"
   default     = 1
 }
 
 variable "asg_max_size" {
   type        = number
-  description = "maximum number of instances to keep in asg for producer"
+  description = "maximum number of instances to keep in asg for sms extractor"
   default     = 2
 }
 
 variable "asg_desired_size" {
   type        = number
-  description = "number of instances to provision for producer"
+  description = "number of instances to provision for sms extractor"
   default     = 1
 }
 
