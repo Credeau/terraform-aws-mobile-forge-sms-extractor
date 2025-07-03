@@ -277,30 +277,30 @@ variable "postgres_db" {
 
 variable "vocab_s3_bucket" {
   type        = string
-  description = "value"
+  description = "S3 bucket holding vocabulary config file"
 }
 
 variable "vocab_file_s3_path" {
   type        = string
-  description = "value"
+  description = "S3 path holding vocabulary config file"
 }
 
 variable "classification_s3_bucket" {
   type        = string
-  description = "value"
+  description = "S3 bucket holding classification config file"
 }
 
 variable "classification_file_s3_path" {
   type        = string
-  description = "value"
+  description = "S3 path holding classification config file"
 }
 
 variable "regex_s3_bucket" {
   type        = string
-  description = "value"
+  description = "S3 bucket holding regex config file"
 }
 
 variable "regex_file_s3_path" {
   type        = string
-  description = "value"
+  description = "S3 path holding regex config file"
 }
