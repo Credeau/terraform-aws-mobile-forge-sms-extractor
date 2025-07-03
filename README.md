@@ -64,6 +64,8 @@ No modules.
 | <a name="input_asg_desired_size"></a> [asg\_desired\_size](#input\_asg\_desired\_size) | number of instances to provision for sms extractor | `number` | `1` | no |
 | <a name="input_asg_max_size"></a> [asg\_max\_size](#input\_asg\_max\_size) | maximum number of instances to keep in asg for sms extractor | `number` | `2` | no |
 | <a name="input_asg_min_size"></a> [asg\_min\_size](#input\_asg\_min\_size) | minimum number of instances to keep in asg for sms extractor | `number` | `1` | no |
+| <a name="input_classification_file_s3_path"></a> [classification\_file\_s3\_path](#input\_classification\_file\_s3\_path) | S3 path holding classification config file | `string` | n/a | yes |
+| <a name="input_classification_s3_bucket"></a> [classification\_s3\_bucket](#input\_classification\_s3\_bucket) | S3 bucket holding classification config file | `string` | n/a | yes |
 | <a name="input_downscale_evaluation_period"></a> [downscale\_evaluation\_period](#input\_downscale\_evaluation\_period) | Number of seconds required to observe the system before triggering downscale | `number` | `300` | no |
 | <a name="input_downscale_schedule"></a> [downscale\_schedule](#input\_downscale\_schedule) | downscale schedule | `string` | `"0 21 * * MON-SUN"` | no |
 | <a name="input_ecr_image_tag"></a> [ecr\_image\_tag](#input\_ecr\_image\_tag) | aws sync ecr repository image tag | `string` | `"latest"` | no |
@@ -84,6 +86,8 @@ No modules.
 | <a name="input_postgres_port"></a> [postgres\_port](#input\_postgres\_port) | postgres port | `number` | `5432` | no |
 | <a name="input_postgres_user_name"></a> [postgres\_user\_name](#input\_postgres\_user\_name) | postgres user name | `string` | `null` | no |
 | <a name="input_private_subnet_ids"></a> [private\_subnet\_ids](#input\_private\_subnet\_ids) | list of private subnet ids to use | `list(string)` | n/a | yes |
+| <a name="input_regex_file_s3_path"></a> [regex\_file\_s3\_path](#input\_regex\_file\_s3\_path) | S3 path holding regex config file | `string` | n/a | yes |
+| <a name="input_regex_s3_bucket"></a> [regex\_s3\_bucket](#input\_regex\_s3\_bucket) | S3 bucket holding regex config file | `string` | n/a | yes |
 | <a name="input_region"></a> [region](#input\_region) | aws region to use | `string` | `"ap-south-1"` | no |
 | <a name="input_root_volume_size"></a> [root\_volume\_size](#input\_root\_volume\_size) | size of root volume in GiB | `number` | `20` | no |
 | <a name="input_scaling_cpu_threshold"></a> [scaling\_cpu\_threshold](#input\_scaling\_cpu\_threshold) | CPU utilization % threshold for scaling & alerting | `number` | `65` | no |
@@ -97,6 +101,8 @@ No modules.
 | <a name="input_timezone"></a> [timezone](#input\_timezone) | timezone to use for scheduled scaling | `string` | `"Asia/Kolkata"` | no |
 | <a name="input_upscale_evaluation_period"></a> [upscale\_evaluation\_period](#input\_upscale\_evaluation\_period) | Number of seconds required to observe the system before triggering upscale | `number` | `60` | no |
 | <a name="input_upscale_schedule"></a> [upscale\_schedule](#input\_upscale\_schedule) | upscale schedule | `string` | `"0 8 * * MON-SUN"` | no |
+| <a name="input_vocab_file_s3_path"></a> [vocab\_file\_s3\_path](#input\_vocab\_file\_s3\_path) | S3 path holding vocabulary config file | `string` | n/a | yes |
+| <a name="input_vocab_s3_bucket"></a> [vocab\_s3\_bucket](#input\_vocab\_s3\_bucket) | S3 bucket holding vocabulary config file | `string` | n/a | yes |
 | <a name="input_vpc_id"></a> [vpc\_id](#input\_vpc\_id) | vpc id | `string` | n/a | yes |
 
 ## Outputs
