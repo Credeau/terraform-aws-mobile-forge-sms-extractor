@@ -274,3 +274,33 @@ variable "postgres_db" {
   description = "postgres main database"
   default     = null
 }
+
+variable "vocab_s3_bucket" {
+  type        = string
+  description = "value"
+}
+
+variable "vocab_file_s3_path" {
+  type        = string
+  description = "value"
+}
+
+variable "classification_s3_bucket" {
+  type        = string
+  description = "value"
+}
+
+variable "classification_file_s3_path" {
+  type        = string
+  description = "value"
+}
+
+variable "regex_s3_bucket" {
+  type        = string
+  description = "value"
+}
+
+variable "regex_file_s3_path" {
+  type        = string
+  description = "value"
+}

@@ -45,20 +45,26 @@ resource "aws_launch_template" "main" {
   user_data = base64encode(templatefile(
     "${path.module}/files/userdata.sh.tftpl",
     {
-      region             = var.region
-      registry           = local.ecr_registry
-      ecr_repository     = var.ecr_repository
-      image_tag          = var.ecr_image_tag
-      application        = var.application
-      mapped_port        = var.mapped_port
-      application_port   = var.application_port
-      postgres_user_name = var.postgres_user_name
-      postgres_password  = var.postgres_password
-      postgres_host      = var.postgres_host
-      postgres_port      = var.postgres_port
-      postgres_db        = var.postgres_db
-      max_sms_count      = var.max_sms_count
-      log_group          = aws_cloudwatch_log_group.main.name
+      region                      = var.region
+      registry                    = local.ecr_registry
+      ecr_repository              = var.ecr_repository
+      image_tag                   = var.ecr_image_tag
+      application                 = var.application
+      mapped_port                 = var.mapped_port
+      application_port            = var.application_port
+      postgres_user_name          = var.postgres_user_name
+      postgres_password           = var.postgres_password
+      postgres_host               = var.postgres_host
+      postgres_port               = var.postgres_port
+      postgres_db                 = var.postgres_db
+      max_sms_count               = var.max_sms_count
+      vocab_s3_bucket             = var.vocab_s3_bucket
+      vocab_file_s3_path          = var.vocab_file_s3_path
+      classification_s3_bucket    = var.classification_s3_bucket
+      classification_file_s3_path = var.classification_file_s3_path
+      regex_s3_bucket             = var.regex_s3_bucket
+      regex_file_s3_path          = var.regex_file_s3_path
+      log_group                   = aws_cloudwatch_log_group.main.name
     }
   ))
 

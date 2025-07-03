@@ -14,6 +14,18 @@ docker run -d \
     -e DB_PORT="${postgres_port}" \
     -e DB_NAME="${postgres_db}" \
     -e MAX_SMS_COUNT="${max_sms_count}" \
+    -e VOCAB_USE_S3="true" \
+    -e VOCAB_S3_BUCKET="${vocab_s3_bucket}" \
+    -e VOCAB_S3_KEY="${vocab_file_s3_path}" \
+    -e VOCAB_S3_REGION="${region}" \
+    -e CLASSIFICATION_USE_S3="true" \
+    -e CLASSIFICATION_S3_BUCKET="${classification_s3_bucket}" \
+    -e CLASSIFICATION_S3_KEY="${classification_file_s3_path}" \
+    -e CLASSIFICATION_S3_REGION="${region}" \
+    -e REGEX_USE_S3="true" \
+    -e REGEX_S3_BUCKET="${regex_s3_bucket}" \
+    -e REGEX_S3_KEY="${regex_file_s3_path}" \
+    -e REGEX_S3_REGION="${region}" \
     --restart always \
     --log-driver=awslogs \
     --log-opt awslogs-region="${region}" \
