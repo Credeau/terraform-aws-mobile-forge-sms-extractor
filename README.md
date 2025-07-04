@@ -111,5 +111,8 @@ No modules.
 |------|-------------|
 | <a name="output_alb_access_log_bucket"></a> [alb\_access\_log\_bucket](#output\_alb\_access\_log\_bucket) | ALB Access Log Bucket |
 | <a name="output_asg_name"></a> [asg\_name](#output\_asg\_name) | Auto Scaling Group Name |
+| <a name="output_classification_config_file_uri"></a> [classification\_config\_file\_uri](#output\_classification\_config\_file\_uri) | Classification Config File URI |
 | <a name="output_lb_dns_name"></a> [lb\_dns\_name](#output\_lb\_dns\_name) | Load Balancer DNS Name |
+| <a name="output_regex_config_file_uri"></a> [regex\_config\_file\_uri](#output\_regex\_config\_file\_uri) | Regex Config File URI |
+| <a name="output_vocab_config_file_uri"></a> [vocab\_config\_file\_uri](#output\_vocab\_config\_file\_uri) | Vocabulary Config File URI |
 <!-- END_TF_DOCS -->
